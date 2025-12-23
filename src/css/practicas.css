@@ -1,6 +1,10 @@
 /* CSS PARA LOS ESTILOS DEL APARTADO DE PRACTICAS */
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 .contenedor-practicas {
     display: flex;
     flex-direction: column;
@@ -12,11 +16,13 @@
 .contenedor-practicas > h2 {
     text-align: center;
     color: lightgray;
+    scroll-margin-top: 60px;
 }
 
 .tarjeta-practica {
     display: flex;
     justify-content: space-around;
+    scroll-margin-top: 100px;
 }
 
 .tarjeta-practica:nth-child(odd) {
@@ -37,4 +43,43 @@
     width: 40%;
     color: lightgray;
     text-align: center;
+}
+
+/* Estilos para la flecha que sube al inicio del documento */
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #8cc475;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    border: 2px solid white;
+
+    /* Estado inicial: oculto */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        border: 2px solid #8cc475;
+        transform: translateY(-5px);
+    }
+
+    /* Clase que añadiremos con JS */
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.btn-volver-arriba img {
+    width: 25px;
+    height: auto;
+    rotate: 0deg;
 }
