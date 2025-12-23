@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    flex-grow: 1;
+    background-color: #d0d0d0;
+    min-height: calc(100vh - 100px);
+}
+
+.contenedor-principal {
+    width: 100%;
+    /* Añadimos una capa negra transparente ANTES de la imagen */
+    background-image:
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url('../../images/mapa-mundo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    max-width: 700px;
+    width: 90%;
+
+    /* Efecto Cristal: Blanco muy transparente + Desenfoque */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    padding: 60px 40px;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.info h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Un degradado sutil en el texto para que parezca geográfico */
+    background: linear-gradient(to right, #ffffff, #8cc475);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 20px 0;
+}
+.info a {
+    padding: 12px 24px;
+    background-color: #8cc475;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+
+    &:hover {
+        border: 2px solid #8cc475;
+        color: white;
+        transition: all ease 0.3s;
+    }
+}
