@@ -1,11 +1,15 @@
+/* CSS PARA LOS ESTILOS DEL CONTENEDOR PRINCIPAL */
+
 main {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    background-color: #d0d0d0;
-    min-height: calc(100vh - 100px);
+    background-color: #040509;
+
 }
 
 .contenedor-principal {
+    min-height: calc(100vh - 100px);
     width: 100%;
     /* Añadimos una capa negra transparente ANTES de la imagen */
     background-image:

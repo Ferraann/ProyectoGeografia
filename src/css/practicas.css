@@ -1,0 +1,40 @@
+/* CSS PARA LOS ESTILOS DEL APARTADO DE PRACTICAS */
+
+
+.contenedor-practicas {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+    margin: 120px auto;
+}
+
+.contenedor-practicas > h2 {
+    text-align: center;
+    color: lightgray;
+}
+
+.tarjeta-practica {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta-practica:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.tarjeta-practica img {
+    width: auto;
+    height: 300px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    color: lightgray;
+    text-align: center;
+}
