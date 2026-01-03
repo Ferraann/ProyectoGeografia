@@ -30,9 +30,50 @@ html {
     flex-direction: row-reverse;
 }
 
-.tarjeta-practica img {
+.tarjeta-practica img:first-child {
     width: auto;
     height: 300px;
+    
+    &:hover {
+        opacity: 80%;
+        cursor: pointer;
+        transition: opacity ease 0.2s;
+    }
+}
+
+.contenedor-img:hover .open-image {
+    opacity: 1;
+}
+
+.contenedor-img {
+    position: relative;
+    display: inline-block;
+    height: 300px;
+}
+
+.contenedor-img:hover img:first-child {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.contenedor-img img:first-child {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.open-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 5;
+    pointer-events: none;
+    rotate: 45deg;
+
+    opacity: 0;
+    transition: opacity 0.2s ease;
 }
 
 .contenido {
@@ -40,7 +81,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 600px;
     color: lightgray;
     text-align: center;
 }
@@ -82,4 +123,66 @@ html {
     width: 25px;
     height: auto;
     rotate: 0deg;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor-mapas {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+}
+
+/* Apartado de los iframe */
+.contenedor-iframe {
+    width: 400px;
+    overflow: hidden;
+    border-radius: 8px; /* Para que coincida con el estilo de tus tarjetas */
+    background: #f0f0f0; /* Color de fondo mientras carga */
+}
+
+.contenedor-practicas a {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    background-color: #8cc475;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+
+    &:hover {
+        border: 1px solid #8cc475;
+        color: white;
+        transition: all ease 0.3s;
+    }
+}
+
+.practica9 {
+    display: flex;
+    width: 500px;
+    margin: auto auto;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 400px; /* Ajusta esta altura a tu gusto */
+    border: none;
+}
+
+
+.titulo-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo-container p {
+    font-size: 18px;
+    color: white;
 }

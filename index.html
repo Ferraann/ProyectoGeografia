@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="src/css/general.css">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/practicas.css">
+    <link rel="stylesheet" href="src/css/modales.css">
 
     <script src="src/js/index.js" defer></script>
+    <script src="src/js/practicas.js" defer></script>
 </head>
 <body>
 
@@ -37,18 +39,20 @@
             <p>En este portafolio mostramos todas las prácticas realizadas al largo del semestre.</p>
             <a href="#titulo-practicas">Ver las prácticas</a>
         </div>
-
         <a href="#titulo-practicas"><img src="icons/arrow-icon.png" alt="Icono de una flecha"></a>
     </section>
 
     <section class="contenedor-practicas">
         <h2 id="titulo-practicas">Prácticas realizadas</h2>
         <div class="tarjeta-practica" id="practica1">
-            <img src="images/imagen-de-prueba.jpg" alt="Mapa Práctica 1">
+            <div class="contenedor-img" id="prac1">
+                <img src="docs/practica_1.png" alt="Práctica 1. Mapa de incendios">
+                <img src="icons/open-image.png" class="open-image" alt="Icono de abrir imagen">
+            </div>
+
             <div class="contenido">
                 <h3>Práctica 1: Mapa de incendios</h3>
                 <p>Descripción breve</p>
-                <a href="docs/practica1.pdf" target="_blank" class="btn-descarga">Ver Documento Full</a>
             </div>
         </div>
 
@@ -62,11 +66,22 @@
         </div>
 
         <div class="tarjeta-practica" id="practica4">
-            <img src="images/imagen-de-prueba.jpg" alt="Mapa Práctica 4">
+            <div class="contenedor">
+                <div class="contenedor-iframe">
+                    <iframe
+                            src="docs/practica_4_webmap.html"
+                            width="100%"
+                            height="400px"
+                            style="border:none;"
+                            title="Mapa de Contenedores">
+                    </iframe>
+                </div>
+                <a href="docs/practica_4_webmap.html" target="_blank" class="btn-descarga">Abrir mapa de zonas válidas</a>
+            </div>
+
             <div class="contenido">
-                <h3>Práctica 4: Capa Zonas Validas.shp. Análisis del territorio </h3>
+                <h3>Práctica 4: Capa Zonas Válidas.shp. Análisis del territorio </h3>
                 <p>Descripción breve</p>
-                <a href="#" class="btn-descarga">Ver Detalles</a>
             </div>
         </div>
 
@@ -89,35 +104,123 @@
         </div>
 
         <div class="tarjeta-practica" id="practica8">
-            <img src="images/imagen-de-prueba.jpg" alt="Mapa Práctica 8">
+            <div class="contenedor-mapas">
+                <div class="contenedor">
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_8_accidentes.html"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Contenedores">
+                        </iframe>
+                    </div>
+                    <a href="docs/practica_8_accidentes.html" target="_blank" class="btn-descarga">Abrir mapa de accidentes</a>
+                </div>
+
+                <div class="contenedor">
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_8_contenedores.html"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Contenedores">
+                        </iframe>
+                    </div>
+                    <a href="docs/practica_8_contenedores.html" target="_blank" class="btn-descarga">Abrir mapa de contenedores</a>
+                </div>
+            </div>
+
             <div class="contenido">
-                <h3>Práctica 8: Contenedores.html y Accidentes Madríd.html. Folium</h3>
-                <p>Descripción breve</p>
-                <a href="#" class="btn-descarga">Ver Detalles</a>
+                <h3>Práctica 8: Contenedores.html y Accidentes Madrid.html</h3>
+                <p>En esta práctica hemos usado Folium para realizar dos mapas, uno para ver los contenedores de Madrid y otro para ver los accidentes de las mujeres.</p>
+                <p>Se puede acceder a una vista previa pulsando en los botones.</p>
             </div>
         </div>
 
         <div class="tarjeta-practica" id="practica9">
-            <img src="images/imagen-de-prueba.jpg" alt="Mapa Práctica 9">
+            <div class="contenedor">
+                <div class="titulo-container">
+                    <p>Mapa con índices EVI</p>
+                    <p>Mapa con índices SAVI</p>
+                </div>
+                <div class="contenedor-mapas">
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_9_SAVI_Sanabria_Rodado_Y_Sansaloni_Prats.html"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Contenedores">
+                        </iframe>
+                    </div>
+
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_9_EVI_Sanabria_Rodado_Y_Sansaloni_Prats.html"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Contenedores">
+                        </iframe>
+                    </div>
+                </div>
+
+                <a href="docs/practica_9_Sanabria_Rodado_Y_Sansaloni_Prats.html" target="_blank" class="btn-descarga practica9">Abrir mapa dual</a>
+            </div>
+
             <div class="contenido">
                 <h3>Práctica 9: cálculo de los índices SAVI y EVI. Google Earth Engine</h3>
                 <p>Descripción breve</p>
-                <a href="#" class="btn-descarga">Ver Detalles</a>
             </div>
         </div>
 
         <div class="tarjeta-practica" id="practica10">
-            <img src="images/imagen-de-prueba.jpg" alt="Mapa Práctica 10">
+            <div class="contenedor-mapas">
+                <div class="contenedor">
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_10_Chiquita_Sanabria_Rodado_Y_Sansaloni_Prats.html"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Contenedores">
+                        </iframe>
+                    </div>
+                    <a href="docs/practica_10_Chiquita_Sanabria_Rodado_Y_Sansaloni_Prats.html" target="_blank" class="btn-descarga">Abrir mapa de Chiquita</a>
+                </div>
+
+                <div class="contenedor">
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_10_Biwa_Sanabria_Rodado_Y_Sansaloni_Prats.html"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Contenedores">
+                        </iframe>
+                    </div>
+                    <a href="docs/practica_10_Biwa_Sanabria_Rodado_Y_Sansaloni_Prats.html" target="_blank" class="btn-descarga">Abrir mapa de Biwa</a>
+                </div>
+            </div>
+
             <div class="contenido">
                 <h3>Práctica 10: Imagenes del índice calculado. Ejercicio GEE</h3>
                 <p>Descripción breve</p>
-                <a href="#" class="btn-descarga">Ver Detalles</a>
             </div>
         </div>
     </section>
 </main>
 
 <footer>&copy; Derechos reservados. Raúl Sanabria y Ferran Sansaloni</footer>
+
+
+<div id="imagenModal" class="modal-overlay">
+    <span class="cerrar-modal">&times;</span>
+    <img class="modal-contenido" id="imgExpandida">
+    <div id="caption"></div>
+</div>
 
 <a href="#" class="btn-volver-arriba" title="Volver arriba">
     <img src="icons/up-arrow.png" alt="Subir">
