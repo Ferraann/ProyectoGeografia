@@ -186,3 +186,9 @@ iframe {
     font-size: 18px;
     color: white;
 }
+
+.contenedor_p7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

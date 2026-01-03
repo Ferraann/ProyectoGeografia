@@ -44,8 +44,9 @@
 
     <section class="contenedor-practicas">
         <h2 id="titulo-practicas">Prácticas realizadas</h2>
+
         <div class="tarjeta-practica" id="practica1">
-            <div class="contenedor-img" id="prac1">
+            <div class="contenedor-img">
                 <img src="docs/practica_1.png" alt="Práctica 1. Mapa de incendios">
                 <img src="icons/open-image.png" class="open-image" alt="Icono de abrir imagen">
             </div>
@@ -57,11 +58,37 @@
         </div>
 
         <div class="tarjeta-practica" id="practica3">
-            <img src="images/imagen-de-prueba.jpg" alt="Mapa Práctica 3">
+            <div class="contenedor-mapas">
+                <div class="contenedor">
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_3_Mapa_Temperaturas.pdf"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Temperaturas">
+                        </iframe>
+                    </div>
+                    <a href="docs/practica_3_Mapa_Temperaturas.pdf" target="_blank" class="btn-descarga">Ver PDF Temperaturas</a>
+                </div>
+
+                <div class="contenedor">
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_3_Mapa_Precipitaciones.pdf"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Precipitaciones">
+                        </iframe>
+                    </div>
+                    <a href="docs/practica_3_Mapa_Precipitaciones.pdf" target="_blank" class="btn-descarga">Ver PDF Precipitaciones</a>
+                </div>
+            </div>
+
             <div class="contenido">
                 <h3>Práctica 3: Mapa de temperaturas y precipitaciones. Interpolación</h3>
-                <p>Descripción breve</p>
-                <a href="#" class="btn-descarga">Ver Detalles</a>
+                <p>En esta práctica hemos realizado la interpolación de datos climáticos de estaciones meteorológicas para generar modelos continuos de temperaturas y precipitaciones en la península.</p>
             </div>
         </div>
 
@@ -95,11 +122,31 @@
         </div>
 
         <div class="tarjeta-practica" id="practica7">
-            <img src="images/imagen-de-prueba.jpg" alt="Mapa Práctica 7">
+            <div class="contenedor-mapas">
+                <div class="contenedor contenedor_p7">
+                    <div class="contenedor-img">
+                        <img src="docs/practica_7_grafico_rendimiento.jpg" alt="Práctica 7. Gráfico de rendimiento GNSS">
+                        <img src="icons/open-image.png" class="open-image" alt="Icono de abrir imagen">
+                    </div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="contenedor-iframe">
+                        <iframe
+                                src="docs/practica_7_tabla_resultados.html"
+                                width="100%"
+                                height="400px"
+                                style="border:none;"
+                                title="Mapa de Contenedores">
+                        </iframe>
+                    </div>
+                    <a href="docs/practica_7_tabla_resultados.html" target="_blank" class="btn-descarga">Abrir tabla de resultados</a>
+                </div>
+            </div>
+
             <div class="contenido">
                 <h3>Práctica 7: Tabla de resultados y gráfico de rendimiento. GNSS PYTHON</h3>
-                <p>Descripción breve</p>
-                <a href="#" class="btn-descarga">Ver Detalles</a>
+                <p>Procesamiento de datos GNSS mediante Python para el cálculo de parámetros espaciales y temporales, incluyendo el análisis de pendientes y velocidades.</p>
             </div>
         </div>
 
