@@ -73,7 +73,8 @@ main {
     border-radius: 8px;
     text-decoration: none;
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
 
     &:hover {
         border: 2px solid #8cc475;
@@ -91,6 +92,15 @@ main {
 
     /* Aplicamos la animación */
     animation: saltar 2s infinite;
+}
+
+.contenedor-practicas > span {
+    display: flex;
+    margin: 20px auto;
+    width: 60%;
+    height: 2px;
+    background-color: #7a7a7a;
+    border-radius: 45px;
 }
 
 /* Definición del movimiento */
