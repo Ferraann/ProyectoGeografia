@@ -84,7 +84,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 600px;
+    max-width: 500px;
     color: lightgray;
     text-align: center;
 }
@@ -137,7 +137,7 @@ html {
 .contenedor-mapas {
     display: flex;
     flex-direction: row-reverse;
-    gap: 30px;
+    gap: 20px;
 }
 
 /* Apartado de los iframe */
