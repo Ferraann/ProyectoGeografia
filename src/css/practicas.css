@@ -54,9 +54,13 @@ html {
     height: 300px;
 }
 
-.contenedor-img img {
-    margin: auto;
+.contenedor-img {
+    position: relative;
+    display: inline-block;   /* 👈 se ajusta al ancho real de la imagen */
+    height: 300px;
 }
+
+
 
 .contenedor-img:hover img:first-child {
     opacity: 0.7;
@@ -78,10 +82,10 @@ html {
     z-index: 5;
     pointer-events: none;
     rotate: 45deg;
-
     opacity: 0;
     transition: opacity 0.2s ease;
 }
+
 
 .contenido {
     display: flex;
