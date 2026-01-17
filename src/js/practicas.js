@@ -53,3 +53,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.querySelectorAll('.btn-aviso').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.getElementById('geeModal').style.display = 'flex';
+    });
+});
+
+document.querySelector('#geeModal .cerrar-modal').addEventListener('click', () => {
+    document.getElementById('geeModal').style.display = 'none';
+});
+
+// Cerrar al hacer click fuera del contenido
+document.getElementById('geeModal').addEventListener('click', e => {
+    if(e.target === e.currentTarget) {
+        e.currentTarget.style.display = 'none';
+    }
+});

@@ -268,7 +268,7 @@
             </div>
 
             <div class="contenido">
-                <h3>Práctica 9: cálculo de los índices SAVI y EVI.</h3>
+                <h3>Práctica 9: cálculo de los índices SAVI y EVI.<button class="btn-aviso" data-modal="gee">⚠️</button></h3>
                 <p>En esta práctica usamos Google Earth Engine para obtener índices más precisos que el habitual NDVI. Calculamos el SAVI y el EVI para corregir las distorsiones que provocan el suelo y la atmósfera al analizar la vegetación.</p>
             </div>
         </div>
@@ -311,7 +311,7 @@
             </div>
 
             <div class="contenido">
-                <h3>Práctica 10: Detección de agua y umbralización (Biwa y Chiquita)</h3>
+                <h3>Práctica 10: Detección de agua y umbralización (Biwa y Chiquita)<button class="btn-aviso" data-modal="gee">⚠️</button></h3>
                 <p>Aprendimos a diferenciar agua y tierra mediante scripts en GEE. Usamos imágenes del Lago Biwa y Mar Chiquita para definir umbrales que nos permitieron detectar y aislar automáticamente las masas de agua de la superficie terrestre.</p>
             </div>
         </div>
@@ -326,6 +326,23 @@
     <img class="modal-contenido" id="imgExpandida">
     <div id="caption"></div>
 </div>
+
+<div id="geeModal" class="modal-overlay">
+    <span class="cerrar-modal">&times;</span>
+    <div class="modal-contenido">
+        <h3>Aviso sobre Google Earth Engine</h3>
+        <p>
+            Este mapa utiliza servicios de Google Earth Engine.
+            <br><br>
+            Si el token de autenticación ha caducado, el mapa puede mostrarse
+            vacío o solo con una capa base.
+            <br><br>
+            El código funciona correctamente y el comportamiento depende
+            del estado del token.
+        </p>
+    </div>
+</div>
+
 
 <a href="#" class="btn-volver-arriba" title="Volver arriba">
     <img src="icons/up-arrow.png" alt="Subir">
