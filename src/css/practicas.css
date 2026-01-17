@@ -54,6 +54,10 @@ html {
     height: 300px;
 }
 
+.contenedor-img img {
+    margin: auto;
+}
+
 .contenedor-img:hover img:first-child {
     opacity: 0.7;
     transition: opacity 0.2s ease;
@@ -132,6 +136,12 @@ html {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.contenedor p {
+    z-index: 10;
+    color: white;
+    margin: auto;
 }
 
 .contenedor-mapas {
